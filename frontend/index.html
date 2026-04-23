@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enigma del Einstein</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand-row">
+        <img class="brand-logo" src="images/logo_aja.png" alt="Logo AJA" />
+        <div>
+          <p class="app-label"><img class="app-label-icon" src="images/palanca-de-mando.png" alt="Mando de juego" /> Juego</p>
+        </div>
+      </div>
+      <h1 class="app-title">Enigma del Einstein</h1>
+      <div class="status-chip disconnected" id="connectionStatus" aria-label="Desconectado"></div>
+    </header>
+
+    <main class="main-grid">
+      <section class="panel panel-clues">
+        <h2>Pistas</h2>
+        <div class="clues-list" id="cluesList">
+          <p class="empty-state">Las pistas se mostrarán aquí cuando el juego comience.</p>
+        </div>
+      </section>
+
+      <section class="panel panel-info">
+        <h2>Información del juego</h2>
+        <p id="gameName">Cargando...</p>
+        <div class="info-panel-inner">
+          <div class="info-copy">
+            <p class="game-description">
+              Hay 5 casas de diferentes colores y en cada casa vive una persona de diferente nacionalidad, los 5 propietarios beben diferentes bebidas, gustan de diferentes tipos de cigarrillos y tienen cada uno un tipo de animal diferente como mascota.<br>
+              La pregunta es: ¿Quién tiene un pez?<br>
+              Cuando se acierte la posición de alguna ficha se marcará con un visto a la pista acertada.
+            </p>
+          </div>
+          <div class="info-image-wrapper">
+            <img class="info-image" src="images/einstein.png" alt="Einstein" />
+          </div>
+        </div>
+        <div class="intro-footer">
+          <button class="intro-dismiss" id="introDismiss">Entendido, mostrar el juego</button>
+        </div>
+      </section>
+
+      <section class="panel panel-board" id="boardSection">
+        <h2>Tablero</h2>
+        <div class="board-wrapper">
+          <table class="game-board" id="gameBoard">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Casa 1</th>
+                <th>Casa 2</th>
+                <th>Casa 3</th>
+                <th>Casa 4</th>
+                <th>Casa 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Color</th>
+                <td data-row="color" data-col="1">&nbsp;</td>
+                <td data-row="color" data-col="2">&nbsp;</td>
+                <td data-row="color" data-col="3">&nbsp;</td>
+                <td data-row="color" data-col="4">&nbsp;</td>
+                <td data-row="color" data-col="5">&nbsp;</td>
+              </tr>
+              <tr>
+                <th>Nacionalidad</th>
+                <td data-row="nacionalidad" data-col="1">&nbsp;</td>
+                <td data-row="nacionalidad" data-col="2">&nbsp;</td>
+                <td data-row="nacionalidad" data-col="3">&nbsp;</td>
+                <td data-row="nacionalidad" data-col="4">&nbsp;</td>
+                <td data-row="nacionalidad" data-col="5">&nbsp;</td>
+              </tr>
+              <tr>
+                <th>Mascota</th>
+                <td data-row="mascota" data-col="1">&nbsp;</td>
+                <td data-row="mascota" data-col="2">&nbsp;</td>
+                <td data-row="mascota" data-col="3">&nbsp;</td>
+                <td data-row="mascota" data-col="4">&nbsp;</td>
+                <td data-row="mascota" data-col="5">&nbsp;</td>
+              </tr>
+              <tr>
+                <th>Bebida</th>
+                <td data-row="comida" data-col="1">&nbsp;</td>
+                <td data-row="comida" data-col="2">&nbsp;</td>
+                <td data-row="comida" data-col="3">&nbsp;</td>
+                <td data-row="comida" data-col="4">&nbsp;</td>
+                <td data-row="comida" data-col="5">&nbsp;</td>
+              </tr>
+              <tr>
+                <th>Dulces</th>
+                <td data-row="dulces" data-col="1">&nbsp;</td>
+                <td data-row="dulces" data-col="2">&nbsp;</td>
+                <td data-row="dulces" data-col="3">&nbsp;</td>
+                <td data-row="dulces" data-col="4">&nbsp;</td>
+                <td data-row="dulces" data-col="5">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="board-footer">
+          <button class="show-info-button" id="showInfoButton">Volver a ver información del juego</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Panel de Notificaciones Superpuesto -->
+  <div class="notification-overlay" id="notificationOverlay">
+    <div class="notification-panel" id="notificationPanel">
+      <!-- Botón de cerrar (solo visible en victoria) -->
+      <button class="notification-close" id="notificationClose" aria-label="Cerrar notificación">
+        <span>×</span>
+      </button>
+
+      <!-- Contenedor del contenido de notificación -->
+      <div class="notification-content" id="notificationContent">
+        <!-- Será rellenado dinámicamente por JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.6.1/dist/socket.io.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

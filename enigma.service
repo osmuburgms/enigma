@@ -1,0 +1,15 @@
+[Unit]
+Description=Enigma backend service
+After=network.target
+
+[Service]
+Type=simple
+User=pi400
+WorkingDirectory=/home/pi400/enigma
+ExecStart=/home/pi400/enigma/run.sh
+Restart=on-failure
+RestartSec=5
+Environment=PATH=/home/pi400/enigma/venv/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,32 @@
+[DB] Tarjeta registrada: AB CD EF 01 -> color: Rojo
+[DB] Tarjeta registrada: AB CD EF 02 -> color: Azul
+[DB] Tarjeta registrada: AB CD EF 03 -> color: Verde
+[DB] Tarjeta registrada: AB CD EF 04 -> color: Amarillo
+[DB] Tarjeta registrada: AB CD EF 05 -> color: Blanco
+
+[DB] Tarjeta registrada: 0A AB 58 BF -> nacionalidad: Inglés
+[DB] Tarjeta registrada: 43 FF DC 06 -> nacionalidad: Sueco
+[DB] Tarjeta registrada: E9 A1 11 4D -> nacionalidad: Danés
+[DB] Tarjeta registrada: 50 2B D0 A6 -> nacionalidad: Noruego
+[DB] Tarjeta registrada: A0 77 93 5E -> nacionalidad: Alemán
+
+[DB] Tarjeta registrada: 22 33 44 55 -> mascota: Perro
+[DB] Tarjeta registrada: 22 33 44 56 -> mascota: Gato
+[DB] Tarjeta registrada: 22 33 44 57 -> mascota: Pájaro
+[DB] Tarjeta registrada: 22 33 44 58 -> mascota: Pez
+[DB] Tarjeta registrada: 22 33 44 59 -> mascota: Caballo
+
+[DB] Tarjeta registrada: 33 44 55 66 -> comida: Té
+[DB] Tarjeta registrada: 33 44 55 67 -> comida: Café
+[DB] Tarjeta registrada: 33 44 55 68 -> comida: Leche
+[DB] Tarjeta registrada: 33 44 55 69 -> comida: Cerveza
+[DB] Tarjeta registrada: 33 44 55 70 -> comida: Agua
+
+[DB] Tarjeta registrada: 44 55 66 77 -> dulces: chocolate
+[DB] Tarjeta registrada: 44 55 66 78 -> dulces: galletas
+[DB] Tarjeta registrada: 44 55 66 79 -> dulces: paleta
+[DB] Tarjeta registrada: 44 55 66 80 -> dulces: caramelos
+[DB] Tarjeta registrada: 44 55 66 81 -> dulces: malvaviscos
+
+# UID especial para reiniciar o apagar el juego
+# 24 B1 46 BC

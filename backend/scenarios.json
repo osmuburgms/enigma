@@ -1,0 +1,149 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "name": "Pez en casa 1",
+      "fish_house": 1,
+      "solution": {
+        "1": {"color": "Azul", "nacionalidad": "Sueco", "mascota": "Pez", "comida": "Té", "dulces": "chocolate"},
+        "2": {"color": "Rojo", "nacionalidad": "Noruego", "mascota": "Gato", "comida": "Café", "dulces": "caramelos"},
+        "3": {"color": "Verde", "nacionalidad": "Inglés", "mascota": "Perro", "comida": "Leche", "dulces": "galletas"},
+        "4": {"color": "Amarillo", "nacionalidad": "Alemán", "mascota": "Pájaro", "comida": "Agua", "dulces": "malvaviscos"},
+        "5": {"color": "Blanco", "nacionalidad": "Danés", "mascota": "Caballo", "comida": "Cerveza", "dulces": "paleta"}
+      },
+      "clues": [
+        {"id": 1, "description": "El sueco vive en la casa azul", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Sueco", "other_attr": "color", "other_value": "Azul"}},
+        {"id": 2, "description": "El hombre que come galletas vive al lado del que tiene un gato", "rule": {"type": "adjacent", "attr": "dulces", "value": "galletas", "adjacent_attr": "mascota", "adjacent_value": "Gato"}},
+        {"id": 3, "description": "El inglés vive en la casa verde", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Inglés", "other_attr": "color", "other_value": "Verde"}},
+        {"id": 4, "description": "El hombre que bebe cerveza vive al lado del hombre que come malvaviscos", "rule": {"type": "adjacent", "attr": "dulces", "value": "malvaviscos", "adjacent_attr": "comida", "adjacent_value": "Cerveza"}},
+        {"id": 5, "description": "El dueño de la casa roja come caramelos", "rule": {"type": "same_column", "attr": "color", "value": "Rojo", "other_attr": "dulces", "other_value": "caramelos"}},
+        {"id": 6, "description": "La casa amarillo está inmediatamente a la izquierda de la casa blanco", "rule": {"type": "left_right", "left_value": "Amarillo", "right_value": "Blanco"}},
+        {"id": 7, "description": "El hombre que vive en la casa del centro bebe leche", "rule": {"type": "center", "attr": "comida", "value": "Leche"}},
+        {"id": 8, "description": "El danés vive en la casa blanca", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Danés", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 9, "description": "El hombre que come galletas tiene un perro", "rule": {"type": "same_column", "attr": "dulces", "value": "galletas", "other_attr": "mascota", "other_value": "Perro"}},
+        {"id": 10, "description": "El dueño de la casa azul bebe té", "rule": {"type": "same_column", "attr": "color", "value": "Azul", "other_attr": "comida", "other_value": "Té"}},
+        {"id": 11, "description": "El hombre que vive en la casa azul come chocolate", "rule": {"type": "same_column", "attr": "color", "value": "Azul", "other_attr": "dulces", "other_value": "chocolate"}},
+        {"id": 12, "description": "El alemán bebe agua", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Alemán", "other_attr": "comida", "other_value": "Agua"}},
+        {"id": 13, "description": "El hombre que come paleta vive en la casa blanca", "rule": {"type": "same_column", "attr": "dulces", "value": "paleta", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 14, "description": "El hombre que tiene un caballo vive en la casa blanca", "rule": {"type": "same_column", "attr": "mascota", "value": "Caballo", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 15, "description": "El dueño de la casa amarilla tiene un pájaro", "rule": {"type": "same_column", "attr": "color", "value": "Amarillo", "other_attr": "mascota", "other_value": "Pájaro"}}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pez en casa 2",
+      "fish_house": 2,
+      "solution": {
+        "1": {"color": "Amarillo", "nacionalidad": "Noruego", "mascota": "Gato", "comida": "Té", "dulces": "caramelos"},
+        "2": {"color": "Verde", "nacionalidad": "Sueco", "mascota": "Pez", "comida": "Café", "dulces": "chocolate"},
+        "3": {"color": "Azul", "nacionalidad": "Inglés", "mascota": "Perro", "comida": "Leche", "dulces": "galletas"},
+        "4": {"color": "Rojo", "nacionalidad": "Alemán", "mascota": "Pájaro", "comida": "Agua", "dulces": "malvaviscos"},
+        "5": {"color": "Blanco", "nacionalidad": "Danés", "mascota": "Caballo", "comida": "Cerveza", "dulces": "paleta"}
+      },
+      "clues": [
+        {"id": 1, "description": "El noruego vive en la casa amarilla", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Noruego", "other_attr": "color", "other_value": "Amarillo"}},
+        {"id": 2, "description": "El sueco vive en la casa verde", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Sueco", "other_attr": "color", "other_value": "Verde"}},
+        {"id": 3, "description": "El inglés vive en la casa azul", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Inglés", "other_attr": "color", "other_value": "Azul"}},
+        {"id": 4, "description": "El dueño de la casa blanca bebe cerveza", "rule": {"type": "same_column", "attr": "color", "value": "Blanco", "other_attr": "comida", "other_value": "Cerveza"}},
+        {"id": 5, "description": "El hombre que come chocolate vive al lado del que bebe té", "rule": {"type": "adjacent", "attr": "dulces", "value": "chocolate", "adjacent_attr": "comida", "adjacent_value": "Té"}},
+        {"id": 6, "description": "El dueño de la casa roja come malvaviscos", "rule": {"type": "same_column", "attr": "color", "value": "Rojo", "other_attr": "dulces", "other_value": "malvaviscos"}},
+        {"id": 7, "description": "El hombre que vive en la casa del centro bebe leche", "rule": {"type": "center", "attr": "comida", "value": "Leche"}},
+        {"id": 8, "description": "El danés vive en la última casa", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Danés", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 9, "description": "El hombre que come galletas cría un perro", "rule": {"type": "same_column", "attr": "dulces", "value": "galletas", "other_attr": "mascota", "other_value": "Perro"}},
+        {"id": 10, "description": "El dueño de la casa roja bebe agua", "rule": {"type": "same_column", "attr": "color", "value": "Rojo", "other_attr": "comida", "other_value": "Agua"}},
+        {"id": 11, "description": "La casa verde está al lado de la casa amarilla", "rule": {"type": "adjacent", "attr": "color", "value": "Verde", "adjacent_attr": "color", "adjacent_value": "Amarillo"}},
+        {"id": 12, "description": "El hombre que tiene caballo vive al lado del que come malvaviscos", "rule": {"type": "adjacent", "attr": "mascota", "value": "Caballo", "adjacent_attr": "dulces", "adjacent_value": "malvaviscos"}},
+        {"id": 13, "description": "El hombre que come paleta vive al lado del que tiene un pájaro", "rule": {"type": "adjacent", "attr": "dulces", "value": "paleta", "adjacent_attr": "mascota", "adjacent_value": "Pájaro"}},
+        {"id": 14, "description": "El dueño de la casa amarilla cría un gato", "rule": {"type": "same_column", "attr": "color", "value": "Amarillo", "other_attr": "mascota", "other_value": "Gato"}},
+        {"id": 15, "description": "El alemán vive en la casa roja", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Alemán", "other_attr": "color", "other_value": "Rojo"}}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pez en casa 3",
+      "fish_house": 3,
+      "solution": {
+        "1": {"color": "Amarillo", "nacionalidad": "Noruego", "mascota": "Gato", "comida": "Té", "dulces": "caramelos"},
+        "2": {"color": "Verde", "nacionalidad": "Danés", "mascota": "Caballo", "comida": "Café", "dulces": "chocolate"},
+        "3": {"color": "Rojo", "nacionalidad": "Sueco", "mascota": "Pez", "comida": "Leche", "dulces": "galletas"},
+        "4": {"color": "Blanco", "nacionalidad": "Inglés", "mascota": "Perro", "comida": "Agua", "dulces": "malvaviscos"},
+        "5": {"color": "Azul", "nacionalidad": "Alemán", "mascota": "Pájaro", "comida": "Cerveza", "dulces": "paleta"}
+      },
+      "clues": [
+        {"id": 1, "description": "El sueco vive en la casa roja", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Sueco", "other_attr": "color", "other_value": "Rojo"}},
+        {"id": 2, "description": "La persona que vive en la casa del centro come galletas", "rule": {"type": "center", "attr": "dulces", "value": "galletas"}},
+        {"id": 3, "description": "El inglés vive en la casa blanca", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Inglés", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 4, "description": "El dueño de la casa azul bebe cerveza", "rule": {"type": "same_column", "attr": "color", "value": "Azul", "other_attr": "comida", "other_value": "Cerveza"}},
+        {"id": 5, "description": "El hombre que come chocolate vive al lado del que bebe té", "rule": {"type": "adjacent", "attr": "dulces", "value": "chocolate", "adjacent_attr": "comida", "adjacent_value": "Té"}},
+        {"id": 6, "description": "El dueño de la casa amarilla come caramelos", "rule": {"type": "same_column", "attr": "color", "value": "Amarillo", "other_attr": "dulces", "other_value": "caramelos"}},
+        {"id": 7, "description": "El dueño de la casa verde tiene un caballo", "rule": {"type": "same_column", "attr": "color", "value": "Verde", "other_attr": "mascota", "other_value": "Caballo"}},
+        {"id": 8, "description": "El hombre que vive en la casa del centro bebe leche", "rule": {"type": "center", "attr": "comida", "value": "Leche"}},
+        {"id": 9, "description": "El noruego come caramelos", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Noruego", "other_attr": "dulces", "other_value": "caramelos"}},
+        {"id": 10, "description": "La persona que come paleta cría un pájaro", "rule": {"type": "same_column", "attr": "dulces", "value": "paleta", "other_attr": "mascota", "other_value": "Pájaro"}},
+        {"id": 11, "description": "El hombre que come paleta vive al lado del que tiene un perro", "rule": {"type": "adjacent", "attr": "dulces", "value": "paleta", "adjacent_attr": "mascota", "adjacent_value": "Perro"}},
+        {"id": 12, "description": "El danés vive al lado de la casa amarilla", "rule": {"type": "adjacent", "attr": "nacionalidad", "value": "Danés", "adjacent_attr": "color", "adjacent_value": "Amarillo"}},
+        {"id": 13, "description": "El dueño de la casa blanca bebe agua", "rule": {"type": "same_column", "attr": "color", "value": "Blanco", "other_attr": "comida", "other_value": "Agua"}},
+        {"id": 14, "description": "El hombre que come chocolate vive al lado del que tiene un gato", "rule": {"type": "adjacent", "attr": "dulces", "value": "chocolate", "adjacent_attr": "mascota", "adjacent_value": "Gato"}},
+        {"id": 15, "description": "La persona que vive en la casa blanca come malvaviscos", "rule": {"type": "same_column", "attr": "color", "value": "Blanco", "other_attr": "dulces", "other_value": "malvaviscos"}}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pez en casa 4",
+      "fish_house": 4,
+      "solution": {
+        "1": {"color": "Amarillo", "nacionalidad": "Noruego", "mascota": "Gato", "comida": "Té", "dulces": "caramelos"},
+        "2": {"color": "Verde", "nacionalidad": "Danés", "mascota": "Caballo", "comida": "Café", "dulces": "chocolate"},
+        "3": {"color": "Rojo", "nacionalidad": "Inglés", "mascota": "Perro", "comida": "Leche", "dulces": "galletas"},
+        "4": {"color": "Blanco", "nacionalidad": "Sueco", "mascota": "Pez", "comida": "Agua", "dulces": "malvaviscos"},
+        "5": {"color": "Azul", "nacionalidad": "Alemán", "mascota": "Pájaro", "comida": "Cerveza", "dulces": "paleta"}
+      },
+      "clues": [
+        {"id": 1, "description": "El sueco vive en la casa blanca", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Sueco", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 2, "description": "El dueño de la casa azul cría un pájaro", "rule": {"type": "same_column", "attr": "color", "value": "Azul", "other_attr": "mascota", "other_value": "Pájaro"}},
+        {"id": 3, "description": "El noruego vive en la casa amarilla", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Noruego", "other_attr": "color", "other_value": "Amarillo"}},
+        {"id": 4, "description": "El hombre que bebe café come chocolate", "rule": {"type": "same_column", "attr": "comida", "value": "Café", "other_attr": "dulces", "other_value": "chocolate"}},
+        {"id": 5, "description": "El danés vive en la casa verde", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Danés", "other_attr": "color", "other_value": "Verde"}},
+        {"id": 6, "description": "El hombre que come chocolate vive al lado del que bebe té", "rule": {"type": "adjacent", "attr": "dulces", "value": "chocolate", "adjacent_attr": "comida", "adjacent_value": "Té"}},
+        {"id": 7, "description": "El hombre que tiene un caballo vive al lado del que come caramelos", "rule": {"type": "adjacent", "attr": "mascota", "value": "Caballo", "adjacent_attr": "dulces", "adjacent_value": "caramelos"}},
+        {"id": 8, "description": "El dueño de la casa amarilla come caramelos", "rule": {"type": "same_column", "attr": "color", "value": "Amarillo", "other_attr": "dulces", "other_value": "caramelos"}},
+        {"id": 9, "description": "El hombre que vive en la casa del centro bebe leche", "rule": {"type": "center", "attr": "comida", "value": "Leche"}},
+        {"id": 10, "description": "El alemán come paleta", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Alemán", "other_attr": "dulces", "other_value": "paleta"}},
+        {"id": 11, "description": "La persona que come galletas cría un perro", "rule": {"type": "same_column", "attr": "dulces", "value": "galletas", "other_attr": "mascota", "other_value": "Perro"}},
+        {"id": 12, "description": "El hombre que vive en la casa blanca bebe agua", "rule": {"type": "same_column", "attr": "color", "value": "Blanco", "other_attr": "comida", "other_value": "Agua"}},
+        {"id": 13, "description": "El danés vive al lado del que tiene un gato", "rule": {"type": "adjacent", "attr": "nacionalidad", "value": "Danés", "adjacent_attr": "mascota", "adjacent_value": "Gato"}},
+        {"id": 14, "description": "El dueño de la casa azul vive al lado del que come malvaviscos", "rule": {"type": "adjacent", "attr": "color", "value": "Azul", "adjacent_attr": "dulces", "adjacent_value": "malvaviscos"}},
+        {"id": 15, "description": "El inglés vive en la casa roja", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Inglés", "other_attr": "color", "other_value": "Rojo"}}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pez en casa 5",
+      "fish_house": 5,
+      "solution": {
+        "1": {"color": "Amarillo", "nacionalidad": "Noruego", "mascota": "Gato", "comida": "Té", "dulces": "caramelos"},
+        "2": {"color": "Verde", "nacionalidad": "Danés", "mascota": "Caballo", "comida": "Café", "dulces": "chocolate"},
+        "3": {"color": "Rojo", "nacionalidad": "Inglés", "mascota": "Perro", "comida": "Leche", "dulces": "galletas"},
+        "4": {"color": "Blanco", "nacionalidad": "Alemán", "mascota": "Pájaro", "comida": "Agua", "dulces": "malvaviscos"},
+        "5": {"color": "Azul", "nacionalidad": "Sueco", "mascota": "Pez", "comida": "Cerveza", "dulces": "paleta"}
+      },
+      "clues": [
+        {"id": 1, "description": "El sueco vive en la casa azul", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Sueco", "other_attr": "color", "other_value": "Azul"}},
+        {"id": 2, "description": "El hombre que come paleta bebe cerveza", "rule": {"type": "same_column", "attr": "dulces", "value": "paleta", "other_attr": "comida", "other_value": "Cerveza"}},
+        {"id": 3, "description": "El inglés vive en la casa roja", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Inglés", "other_attr": "color", "other_value": "Rojo"}},
+        {"id": 4, "description": "El alemán come malvaviscos", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Alemán", "other_attr": "dulces", "other_value": "malvaviscos"}},
+        {"id": 5, "description": "El hombre que bebe agua vive en la casa blanca", "rule": {"type": "same_column", "attr": "comida", "value": "Agua", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 6, "description": "El dueño de la casa amarilla come caramelos", "rule": {"type": "same_column", "attr": "color", "value": "Amarillo", "other_attr": "dulces", "other_value": "caramelos"}},
+        {"id": 7, "description": "El hombre que come chocolate vive al lado del que bebe té", "rule": {"type": "adjacent", "attr": "dulces", "value": "chocolate", "adjacent_attr": "comida", "adjacent_value": "Té"}},
+        {"id": 8, "description": "La persona que come galletas cría un perro", "rule": {"type": "same_column", "attr": "dulces", "value": "galletas", "other_attr": "mascota", "other_value": "Perro"}},
+        {"id": 9, "description": "El hombre que tiene un pájaro vive en la casa blanca", "rule": {"type": "same_column", "attr": "mascota", "value": "Pájaro", "other_attr": "color", "other_value": "Blanco"}},
+        {"id": 10, "description": "El hombre que come paleta vive en la casa azul", "rule": {"type": "same_column", "attr": "dulces", "value": "paleta", "other_attr": "color", "other_value": "Azul"}},
+        {"id": 11, "description": "El hombre que come galletas vive al lado del que tiene un caballo", "rule": {"type": "adjacent", "attr": "dulces", "value": "galletas", "adjacent_attr": "mascota", "adjacent_value": "Caballo"}},
+        {"id": 12, "description": "El sueco vive al lado de la casa blanca", "rule": {"type": "adjacent", "attr": "nacionalidad", "value": "Sueco", "adjacent_attr": "color", "adjacent_value": "Blanco"}},
+        {"id": 13, "description": "El danés vive en la casa verde", "rule": {"type": "same_column", "attr": "nacionalidad", "value": "Danés", "other_attr": "color", "other_value": "Verde"}},
+        {"id": 14, "description": "El dueño de la casa verde vive al lado del que tiene un gato", "rule": {"type": "adjacent", "attr": "color", "value": "Verde", "adjacent_attr": "mascota", "adjacent_value": "Gato"}},
+        {"id": 15, "description": "El hombre que come malvaviscos vive al lado del que bebe leche", "rule": {"type": "adjacent", "attr": "dulces", "value": "malvaviscos", "adjacent_attr": "comida", "adjacent_value": "Leche"}}
+      ]
+    }
+  ]
+}
