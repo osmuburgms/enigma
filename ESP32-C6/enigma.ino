@@ -350,7 +350,7 @@ void loop() {
 
     StaticJsonDocument<128> doc;
     doc["tag"] = uid;
-    doc["esp"] = 1;
+    doc["esp"] = 1; // ID correspondiente cada ESP32-SC6
     doc["sensor"] = i + 1;
 
     char buffer[128];
