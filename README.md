@@ -50,7 +50,7 @@ enigma/
 │   │   └── styles.css            # Estilos
 │   ├── js/
 │   │   └── app.js                # Lógica del frontend
-│   └── images/                   # Imágenes de los tags
+│   └── images/                   # Imágenes usadas en el frontend
 ├── run.sh                        # Script de inicio
 ├── restart.sh                    # Script de reinicio
 ├── send_ip.sh                    # Script para enviar IP automáticamente
