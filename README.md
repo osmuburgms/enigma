@@ -31,6 +31,8 @@ Un juego de lógica estilo "Einstein" que integra sensores RFID reales vía ESP3
 
 ```
 enigma/
+├── ESP32-C6/
+│   ├── enigma.ino                # ESP32-C6 source code
 ├── backend/
 │   ├── app.py                    # Punto de entrada principal
 │   ├── game_logic.py             # Lógica del juego y validación
@@ -50,6 +52,9 @@ enigma/
 │   │   └── app.js                # Lógica del frontend
 │   └── images/                   # Imágenes de los tags
 ├── run.sh                        # Script de inicio
+├── restart.sh                    # Script de reinicio
+├── send_ip.sh                    # Script para enviar IP automáticamente
+├── send_ip_manual.sh             # Script para enviar IP manualmente
 ├── enigma.service                # Servicio systemd (opcional)
 └── README.md                     # Este archivo
 ```
