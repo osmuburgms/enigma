@@ -33,6 +33,7 @@ Un juego de lógica estilo "Einstein" que integra sensores RFID reales vía ESP3
 enigma/
 ├── ESP32-C6/
 │   ├── enigma.ino                # ESP32-C6 source code
+│   ├── esp32_apmode.ino          # ESP32-C6 AP mode source code
 ├── backend/
 │   ├── app.py                    # Punto de entrada principal
 │   ├── game_logic.py             # Lógica del juego y validación
