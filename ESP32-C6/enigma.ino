@@ -277,7 +277,7 @@ void manejarMQTT() {
 
   lastMQTTAttempt = millis();
 
-  if (client.connect("ESP32C6_Client")) {
+  if (client.connect("ESP32C6_Client_1")) { // Cambia el ID por cada ESP32-C6
     estadoLED = MQTT_OK;
   }
 }
