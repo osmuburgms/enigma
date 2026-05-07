@@ -1,10 +1,10 @@
 #include <WiFi.h>
 #include <EEPROM.h>
-#include <PubSubClient.h>
-#include <ArduinoJson.h>
+#include <PubSubClient.h>      // by Nick O'leary
+#include <ArduinoJson.h>       // by Benoit Blanchon
 #include <SPI.h>
-#include <MFRC522.h>
-#include <Adafruit_NeoPixel.h>
+#include <MFRC522.h>           // by miguelbalboa <GithubComunnity>
+#include <Adafruit_NeoPixel.h> // by Adafruit
 
 // ========= LED RGB =========
 #define LED_PIN 8
