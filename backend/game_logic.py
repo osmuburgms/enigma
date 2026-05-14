@@ -30,7 +30,7 @@ class GameLogic:
         5: AttributeType.DULCES
     }
     
-    SPECIAL_UID = "24 B1 46 BC"
+    SPECIAL_UID = "FC 98 24 49"
 
     def __init__(self, mqtt, frontend_callback=None):
         self.mqtt = mqtt
@@ -65,39 +65,39 @@ class GameLogic:
         
         # Registrar tarjetas RFID con sus atributos
         # COLORES (5 tarjetas)
-        self.db.register_rfid("AB CD EF 01", AttributeType.COLOR, "Rojo")
-        self.db.register_rfid("AB CD EF 02", AttributeType.COLOR, "Azul")
-        self.db.register_rfid("AB CD EF 03", AttributeType.COLOR, "Verde")
-        self.db.register_rfid("AB CD EF 04", AttributeType.COLOR, "Amarillo")
-        self.db.register_rfid("AB CD EF 05", AttributeType.COLOR, "Blanco")
+        self.db.register_rfid("73 77 06 05", AttributeType.COLOR, "Rojo")
+        self.db.register_rfid("73 73 11 05", AttributeType.COLOR, "Azul")
+        self.db.register_rfid("93 5D E7 05", AttributeType.COLOR, "Verde")
+        self.db.register_rfid("E3 77 D8 04", AttributeType.COLOR, "Amarillo")
+        self.db.register_rfid("A3 46 8D 04", AttributeType.COLOR, "Blanco")
         
         # NACIONALIDADES (5 tarjetas)
-        self.db.register_rfid("0A AB 58 BF", AttributeType.NATIONALITY, "Inglés")
-        self.db.register_rfid("43 FF DC 06", AttributeType.NATIONALITY, "Sueco")
-        self.db.register_rfid("E9 A1 11 4D", AttributeType.NATIONALITY, "Danés")
-        self.db.register_rfid("50 2B D0 A6", AttributeType.NATIONALITY, "Noruego")
-        self.db.register_rfid("A0 77 93 5E", AttributeType.NATIONALITY, "Alemán")
+        self.db.register_rfid("33 07 18 05", AttributeType.NATIONALITY, "Inglés")
+        self.db.register_rfid("B3 93 8B 04", AttributeType.NATIONALITY, "Sueco")
+        self.db.register_rfid("13 42 5A 06", AttributeType.NATIONALITY, "Danés")
+        self.db.register_rfid("D3 7C E8 05", AttributeType.NATIONALITY, "Noruego")
+        self.db.register_rfid("F3 73 72 06", AttributeType.NATIONALITY, "Alemán")
         
         # MASCOTAS (5 tarjetas)
-        self.db.register_rfid("22 33 44 55", AttributeType.PET, "Perro")
-        self.db.register_rfid("22 33 44 56", AttributeType.PET, "Gato")
-        self.db.register_rfid("22 33 44 57", AttributeType.PET, "Pájaro")
-        self.db.register_rfid("22 33 44 58", AttributeType.PET, "Pez")
-        self.db.register_rfid("22 33 44 59", AttributeType.PET, "Caballo")
+        self.db.register_rfid("A3 A6 D0 04", AttributeType.PET, "Perro")
+        self.db.register_rfid("A3 A8 9A 04", AttributeType.PET, "Gato")
+        self.db.register_rfid("B3 D2 33 06", AttributeType.PET, "Pájaro")
+        self.db.register_rfid("F3 4C 5A 06", AttributeType.PET, "Pez")
+        self.db.register_rfid("03 B6 56 06", AttributeType.PET, "Caballo")
         
         # COMIDAS (5 tarjetas)
-        self.db.register_rfid("33 44 55 66", AttributeType.FOOD, "Té")
-        self.db.register_rfid("33 44 55 67", AttributeType.FOOD, "Café")
-        self.db.register_rfid("33 44 55 68", AttributeType.FOOD, "Leche")
-        self.db.register_rfid("33 44 55 69", AttributeType.FOOD, "Cerveza")
-        self.db.register_rfid("33 44 55 70", AttributeType.FOOD, "Agua")
+        self.db.register_rfid("B3 C8 56 06", AttributeType.FOOD, "Té")
+        self.db.register_rfid("43 60 5A 06", AttributeType.FOOD, "Café")
+        self.db.register_rfid("13 78 D8 04", AttributeType.FOOD, "Leche")
+        self.db.register_rfid("E3 E9 69 06", AttributeType.FOOD, "Cerveza")
+        self.db.register_rfid("03 9D 82 04", AttributeType.FOOD, "Agua")
         
         # DULCES (5 tarjetas)
-        self.db.register_rfid("44 55 66 77", AttributeType.DULCES, "chocolate")
-        self.db.register_rfid("44 55 66 78", AttributeType.DULCES, "galletas")
-        self.db.register_rfid("44 55 66 79", AttributeType.DULCES, "paleta")
-        self.db.register_rfid("44 55 66 80", AttributeType.DULCES, "caramelos")
-        self.db.register_rfid("44 55 66 81", AttributeType.DULCES, "malvaviscos")
+        self.db.register_rfid("F3 F1 15 05", AttributeType.DULCES, "chocolate")
+        self.db.register_rfid("D3 22 E5 05", AttributeType.DULCES, "galletas")
+        self.db.register_rfid("63 7C 1F 05", AttributeType.DULCES, "paleta")
+        self.db.register_rfid("93 2D 94 04", AttributeType.DULCES, "caramelos")
+        self.db.register_rfid("33 29 15 05", AttributeType.DULCES, "malvaviscos")
         
         self._prepare_new_puzzle()
         self.game_state = "running"
