@@ -1,32 +1,32 @@
-[DB] Tarjeta registrada: AB CD EF 01 -> color: Rojo
-[DB] Tarjeta registrada: AB CD EF 02 -> color: Azul
-[DB] Tarjeta registrada: AB CD EF 03 -> color: Verde
-[DB] Tarjeta registrada: AB CD EF 04 -> color: Amarillo
-[DB] Tarjeta registrada: AB CD EF 05 -> color: Blanco
+[DB] Tarjeta registrada: 73 77 06 05 -> color: Rojo
+[DB] Tarjeta registrada: 73 73 11 05 -> color: Azul
+[DB] Tarjeta registrada: 93 5D E7 05 -> color: Verde
+[DB] Tarjeta registrada: E3 77 D8 04 -> color: Amarillo
+[DB] Tarjeta registrada: A3 46 8D 04 -> color: Blanco
 
-[DB] Tarjeta registrada: 0A AB 58 BF -> nacionalidad: Inglés
-[DB] Tarjeta registrada: 43 FF DC 06 -> nacionalidad: Sueco
-[DB] Tarjeta registrada: E9 A1 11 4D -> nacionalidad: Danés
-[DB] Tarjeta registrada: 50 2B D0 A6 -> nacionalidad: Noruego
-[DB] Tarjeta registrada: A0 77 93 5E -> nacionalidad: Alemán
+[DB] Tarjeta registrada: 33 07 18 05 -> nacionalidad: Inglés
+[DB] Tarjeta registrada: B3 93 8B 04 -> nacionalidad: Sueco
+[DB] Tarjeta registrada: 13 42 5A 06 -> nacionalidad: Danés
+[DB] Tarjeta registrada: D3 7C E8 05 -> nacionalidad: Noruego
+[DB] Tarjeta registrada: F3 73 72 06 -> nacionalidad: Alemán
 
-[DB] Tarjeta registrada: 22 33 44 55 -> mascota: Perro
-[DB] Tarjeta registrada: 22 33 44 56 -> mascota: Gato
-[DB] Tarjeta registrada: 22 33 44 57 -> mascota: Pájaro
-[DB] Tarjeta registrada: 22 33 44 58 -> mascota: Pez
-[DB] Tarjeta registrada: 22 33 44 59 -> mascota: Caballo
+[DB] Tarjeta registrada: A3 A6 D0 04 -> mascota: Perro
+[DB] Tarjeta registrada: A3 A8 9A 04 -> mascota: Gato
+[DB] Tarjeta registrada: B3 D2 33 06 -> mascota: Pájaro
+[DB] Tarjeta registrada: F3 4C 5A 06 -> mascota: Pez
+[DB] Tarjeta registrada: 03 B6 56 06 -> mascota: Caballo
 
-[DB] Tarjeta registrada: 33 44 55 66 -> comida: Té
-[DB] Tarjeta registrada: 33 44 55 67 -> comida: Café
-[DB] Tarjeta registrada: 33 44 55 68 -> comida: Leche
-[DB] Tarjeta registrada: 33 44 55 69 -> comida: Cerveza
-[DB] Tarjeta registrada: 33 44 55 70 -> comida: Agua
+[DB] Tarjeta registrada: B3 C8 56 06 -> comida: Té
+[DB] Tarjeta registrada: 43 60 5A 06 -> comida: Café
+[DB] Tarjeta registrada: 13 78 D8 04 -> comida: Leche
+[DB] Tarjeta registrada: E3 E9 69 06 -> comida: Cerveza
+[DB] Tarjeta registrada: 03 9D 82 04 -> comida: Agua
 
-[DB] Tarjeta registrada: 44 55 66 77 -> dulces: chocolate
-[DB] Tarjeta registrada: 44 55 66 78 -> dulces: galletas
-[DB] Tarjeta registrada: 44 55 66 79 -> dulces: paleta
-[DB] Tarjeta registrada: 44 55 66 80 -> dulces: caramelos
-[DB] Tarjeta registrada: 44 55 66 81 -> dulces: malvaviscos
+[DB] Tarjeta registrada: F3 F1 15 05 -> dulces: chocolate
+[DB] Tarjeta registrada: D3 22 E5 05 -> dulces: galletas
+[DB] Tarjeta registrada: 63 7C 1F 05 -> dulces: paleta
+[DB] Tarjeta registrada: 93 2D 94 04 -> dulces: caramelos
+[DB] Tarjeta registrada: 33 29 15 05 -> dulces: malvaviscos
 
 # UID especial para reiniciar o apagar el juego
-# 24 B1 46 BC
+# FC 98 24 49
