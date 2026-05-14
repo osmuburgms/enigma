@@ -111,7 +111,7 @@ Comandos:
   test                       - Ejecutar prueba automática
 
 Ejemplos:
-  python test_game.py place 1 1 "AB CD EF 01"
+  python test_game.py place 1 1 "73 77 06 05"
   python test_game.py status
   python test_game.py reset
   python test_game.py test
@@ -125,11 +125,11 @@ def run_test_suite(client):
 
     # Verificar UIDs disponibles
     uids = {
-        "color": ["AB CD EF 01", "AB CD EF 02", "AB CD EF 03", "AB CD EF 04", "AB CD EF 05"],
-        "nacionalidad": ["0A AB 58 BF", "43 FF DC 06", "E9 A1 11 4D", "50 2B D0 A6", "A0 77 93 5E"],
-        "mascota": ["22 33 44 55", "22 33 44 56", "22 33 44 57", "22 33 44 58", "22 33 44 59"],
-        "comida": ["33 44 55 66", "33 44 55 67", "33 44 55 68", "33 44 55 69", "33 44 55 70"],
-        "dulces": ["44 55 66 77", "44 55 66 78", "44 55 66 79", "44 55 66 80", "44 55 66 81"],
+        "color": ["73 77 06 05", "73 73 11 05", "93 5D E7 05", "E3 77 D8 04", "A3 46 8D 04"],
+        "nacionalidad": ["33 07 18 05", "B3 93 8B 04", "13 42 5A 06", "D3 7C E8 05", "F3 73 72 06"],
+        "mascota": ["A3 A6 D0 04", "A3 A8 9A 04", "B3 D2 33 06", "F3 4C 5A 06", "03 B6 56 06"],
+        "comida": ["B3 C8 56 06", "43 60 5A 06", "13 78 D8 04", "E3 E9 69 06", "03 9D 82 04"],
+        "dulces": ["F3 F1 15 05", "D3 22 E5 05", "63 7C 1F 05", "93 2D 94 04", "33 29 15 05"],
     }
 
     # Test 1: Colocar tarjetas válidas
